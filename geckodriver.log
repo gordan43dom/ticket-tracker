@@ -203,3 +203,9 @@ Full stack:
 [fresh] [error] load_ppp_module, can't find libpepflashplayer.so
 1500543919951	Marionette	INFO	Listening on port 45742
 1500543920092	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
