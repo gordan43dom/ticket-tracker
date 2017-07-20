@@ -8,10 +8,13 @@ class Event(db.Entity):
 
     link = pn.Required(pn.unicode, unique=True)
     title = pn.Required(pn.unicode)
-    ticketswap_id = pn.Required(pn.unicode, unique=True)
+    ticketswap_id = pn.Optional(pn.unicode)
+    location = pn.Optional(pn.unicode)
     start_date = pn.Required(datetime.date)
     end_date = pn.Optional(datetime.date)
-    subevents = pn.Set('SubEvent', cascade_delete=True)
+
+    subevents = pn.Set("SubEvent", cascade_delete=True)
+
 
 class SubEvent(Event):
     parent_id = pn.Required(Event)

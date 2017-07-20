@@ -3,10 +3,12 @@ from bs4 import BeautifulSoup
 import pony.orm as pn
 from libs.models import Event
 import datetime
+import urllib
 
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 
+DOMAIN_NAME="https://ticketswap.nl"
 
 def parse_date(input_date):
     if input_date:
@@ -14,49 +16,78 @@ def parse_date(input_date):
     else:
         return None
 
-def get_ticketswap_id(link):
-    return link[link.rfind('/') + 1:]
 
-driver = webdriver.Firefox()
+class EventParser:
 
-driver.get('https://www.ticketswap.com/city/amsterdam/3/anytime')
+    def __init__(self, start_point):
+        self.driver = webdriver.Firefox()
+        self.driver.get(start_point)
 
-while True:
-    try:
-        WebDriverWait(driver, 10)
-        load_more_button = driver.find_element_by_xpath('//div[@class="discover-load-more"]/a')
-        load_more_button.click()
-        break
-    except Exception as e:
-        print(e)
-        break
+    @classmethod
+    def get_ticketswap_id(self, link):
+        return link[link.rfind('/') + 1:]
 
-soup = BeautifulSoup(driver.page_source, "lxml")
-events = soup.find_all("div", class_="discover-result-item")
+    def parse(self):
 
-for event in events:
-    with pn.db_session:
-        node_link = event.find("a", {"itemprop": "url"})
+        while True:
+            try:
+                WebDriverWait(self.driver, 10)
+                load_more_button = self.driver.find_element_by_xpath('//div[@class="discover-load-more"]/a')
+                load_more_button.click()
+                break
+            except Exception as e:
+                print(e)
+                break
 
-        ticketswap_id = get_ticketswap_id(node_link["href"])
-        node_start_date = event.find("meta", {"itemprop": "startDate"})
+        soup = BeautifulSoup(self.driver.page_source, "lxml")
+        events = soup.find_all("div", class_="discover-result-item")
 
-        if not Event.exists(ticketswap_id=ticketswap_id):
-            start_date = None
+        for event in events:
+            with pn.db_session:
+                node_link = event.find("a", {"itemprop": "url"})
 
-            if node_start_date:
-                start_date = parse_date(node_start_date["content"])
+                ticketswap_id = EventParser.get_ticketswap_id(node_link["href"])
+                #description=event.find("p", {"class": "discover-result-item--description"})
 
-            node_end_date = event.find("meta", {"itemprop": "endDate"})
-            end_date = None
-            if node_end_date:
-                end_date = parse_date(node_end_date["content"])
+                if not Event.exists(ticketswap_id=ticketswap_id):
+                    start_date = None
 
-            event = Event(
-                start_date=start_date,
-                end_date=end_date,
-                ticketswap_id = ticketswap_id,
-                link=node_link["href"],
-                title=node_link.get_text()
-            )
-            pn.flush()
+                    node_start_date = event.find("meta", {"itemprop": "startDate"})
+                    if node_start_date:
+                        start_date = parse_date(node_start_date["content"])
+
+                    node_end_date = event.find("meta", {"itemprop": "endDate"})
+                    end_date = None
+                    if node_end_date:
+                        end_date = parse_date(node_end_date["content"])
+
+                    event = Event(
+                        start_date=start_date,
+                        end_date=end_date,
+                        ticketswap_id=ticketswap_id,
+                        link=node_link["href"],
+                        title=node_link.get_text(),
+                        #location = description[1].get_text()
+                    )
+                    pn.flush()
+
+class SubEventParser:
+
+    def __init__(self, parent_id):
+        with pn.db_session:
+            self.parent = Event.get(id=parent_id)
+
+    def parse(self):
+        urllib.
+        with urllib.urlopen(DOMAIN_NAME + self.parent.link).read()as r:
+            soup = BeautifulSoup(r)
+
+        print(soup)
+
+
+#parser = EventParser("https://www.ticketswap.com/city/amsterdam/3/anytime")
+#parser.parse()
+
+subEventParser = SubEventParser(1)
+subEventParser.parse()
+
