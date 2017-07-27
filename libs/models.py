@@ -10,8 +10,9 @@ class Event(db.Entity):
     title = pn.Required(pn.unicode)
     ticketswap_id = pn.Optional(pn.unicode)
     location = pn.Optional(pn.unicode)
-    start_date = pn.Required(datetime.date)
-    end_date = pn.Optional(datetime.date)
+    start_date = pn.Required(datetime.datetime)
+    end_date = pn.Optional(datetime.datetime)
+    created_at = pn.Required(datetime.datetime)
 
     subevents = pn.Set("SubEvent", cascade_delete=True)
 

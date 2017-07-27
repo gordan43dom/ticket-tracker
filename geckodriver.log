@@ -501,3 +501,223 @@ A coding exception was thrown and uncaught in a Task.
 Full message: TypeError: NetworkError when attempting to fetch resource.
 Full stack: 
 *************************
+1500993167798	geckodriver	INFO	Listening on 127.0.0.1:33099
+1500993168880	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1500993172308	Marionette	INFO	Listening on port 46086
+1500993172424	Marionette	WARN	TLS certificate errors will be ignored for this session
+1500993218225	Marionette	INFO	Ceased listening
+1500993223912	geckodriver	INFO	Listening on 127.0.0.1:52047
+1500993225016	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1500993227507	Marionette	INFO	Listening on port 42351
+1500993227549	Marionette	WARN	TLS certificate errors will be ignored for this session
+1500993261198	geckodriver	INFO	Listening on 127.0.0.1:52113
+1500993262247	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1500993264716	Marionette	INFO	Listening on port 41686
+1500993264776	Marionette	WARN	TLS certificate errors will be ignored for this session
+1500993494802	Marionette	INFO	Ceased listening
+1500993497020	Marionette	INFO	Ceased listening
+1500993572405	geckodriver	INFO	Listening on 127.0.0.1:59704
+1500993573506	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1500993575910	Marionette	INFO	Listening on port 32954
+1500993575958	Marionette	WARN	TLS certificate errors will be ignored for this session
+1500993992368	geckodriver	INFO	Listening on 127.0.0.1:48672
+1500993993424	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1500993996295	Marionette	INFO	Listening on port 43517
+1500993996414	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1500994262874	geckodriver	INFO	Listening on 127.0.0.1:50734
+1500994263987	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1500994266395	Marionette	INFO	Listening on port 40199
+1500994266438	Marionette	WARN	TLS certificate errors will be ignored for this session
+1500994475210	geckodriver	INFO	Listening on 127.0.0.1:59956
+1500994476313	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1500994478388	Marionette	INFO	Listening on port 32880
+1500994478464	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1500994629374	Marionette	INFO	Ceased listening
+1500994629397	Marionette	INFO	Ceased listening
+1500994629495	Marionette	INFO	Ceased listening
+1500994629512	Marionette	INFO	Ceased listening
+1500994869043	geckodriver	INFO	Listening on 127.0.0.1:39399
+1500994870168	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1500994872407	Marionette	INFO	Listening on port 34475
+1500994872506	Marionette	WARN	TLS certificate errors will be ignored for this session
+1500995319882	Marionette	INFO	Ceased listening
+1500995341311	geckodriver	INFO	Listening on 127.0.0.1:38700
+1500995342407	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+1501077550650	geckodriver	INFO	Listening on 127.0.0.1:34757
+1501077551759	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1501077554403	Marionette	INFO	Listening on port 36599
+1501077554527	Marionette	WARN	TLS certificate errors will be ignored for this session
+1501077703221	geckodriver	INFO	Listening on 127.0.0.1:50735
+1501077704325	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1501077706410	Marionette	INFO	Listening on port 32909
+1501077706477	Marionette	WARN	TLS certificate errors will be ignored for this session
+1501077722131	geckodriver	INFO	Listening on 127.0.0.1:36569
+1501077723242	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1501077725514	Marionette	INFO	Listening on port 42149
+1501077725563	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: 
+  Got an addition of an actor we didn't know about: server1.conn0.child1/domnode60
+console.error: 
+  Got a removal of an actor we didn't know about: server1.conn0.child1/domnode88
+console.error: 
+  Got a removal of an actor we didn't know about: server1.conn0.child1/domnode60
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1501083832706	geckodriver	INFO	Listening on 127.0.0.1:43579
+1501083833820	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1501083836796	Marionette	INFO	Listening on port 33545
+1501083836848	Marionette	WARN	TLS certificate errors will be ignored for this session
+1501084086002	geckodriver	INFO	Listening on 127.0.0.1:45754
+1501084087144	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1501084089356	Marionette	INFO	Listening on port 40165
+1501084089430	Marionette	WARN	TLS certificate errors will be ignored for this session
+1501084119586	geckodriver	INFO	Listening on 127.0.0.1:48815
+1501084120689	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1501084122925	Marionette	INFO	Listening on port 40074
+1501084123034	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1501085083911	geckodriver	INFO	Listening on 127.0.0.1:53141
+1501085085079	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1501085088379	Marionette	INFO	Listening on port 35233
+1501085088465	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
