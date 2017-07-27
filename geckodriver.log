@@ -721,3 +721,40 @@ A coding exception was thrown and uncaught in a Task.
 Full message: TypeError: NetworkError when attempting to fetch resource.
 Full stack: 
 *************************
+1501162394903	geckodriver	INFO	Listening on 127.0.0.1:53103
+1501162396005	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1501162399051	Marionette	INFO	Listening on port 34116
+1501162399156	Marionette	WARN	TLS certificate errors will be ignored for this session
+1501162908415	geckodriver	INFO	Listening on 127.0.0.1:35450
+1501162909534	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1501162912130	Marionette	INFO	Listening on port 36756
+1501162912242	Marionette	WARN	TLS certificate errors will be ignored for this session
+*************************
+A coding exception was thrown and uncaught in a Task.
+
+Full message: TypeError: NetworkError when attempting to fetch resource.
+Full stack: 
+*************************
+1501164531567	geckodriver	INFO	Listening on 127.0.0.1:35514
+1501164532672	geckodriver::marionette	INFO	Starting browser /usr/bin/firefox with args ["-marionette"]
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+[fresh] [error] load_ppp_module, can't find libpepflashplayer.so
+1501164535370	Marionette	INFO	Listening on port 34616
+1501164535479	Marionette	WARN	TLS certificate errors will be ignored for this session
+1501165098901	Marionette	INFO	Ceased listening

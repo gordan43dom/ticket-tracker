@@ -5,17 +5,11 @@ from libs.models import Event, SubEvent
 import datetime
 import requests
 
+import libs.utils as utils
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
 
-DOMAIN_NAME="https://ticketswap.com"
 
-def parse_date(input_date):
-
-    if input_date:
-        return datetime.datetime.strptime(input_date[:-5], "%Y-%m-%dT%H:%M:%S")
-    else:
-        return None
 
 
 class EventParser:
@@ -42,7 +36,6 @@ class EventParser:
             try:
                 WebDriverWait(self.driver, 10)
                 load_more_button = self.driver.find_element_by_xpath('//div[@class="discover-load-more"]/a')
-                break
                 load_more_button.click()
             except Exception as e:
                 print(e)
@@ -56,7 +49,7 @@ class EventParser:
                 node_link = event.find("a", {"itemprop": "url"})
                 ticketswap_id = EventParser.get_ticketswap_id(node_link["href"])
 
-                if not Event.exists(ticketswap_id=ticketswap_id):
+                if not event.exists(ticketswap_id=ticketswap_id):
                     start_date = None
 
                     node_start_date = event.find("meta", {"itemprop": "startDate"})
@@ -83,7 +76,7 @@ class EventParser:
                             location=location,
                             created_at= datetime.datetime.now()
                         )
-                        pn.flush()
+                        pn.commit()
                     except Exception as e:
                         print(e)
 
@@ -105,13 +98,10 @@ class SubEventParser:
 
     def parse(self):
 
-        with requests.get(DOMAIN_NAME + self.parent.link) as r:
+        with requests.get(utils.DOMAIN_NAME + self.parent.link) as r:
             soup = BeautifulSoup(r.text, "lxml")
 
-        with pn.db_session:
-            subevents= soup.find_all("article", {"itemprop": "subEvent"})
-
-
+        subevents= soup.find_all("article", {"itemprop": "subEvent"})
 
         if(subevents):
             for subevent in subevents:
@@ -149,7 +139,7 @@ class SubEventParser:
                                 created_at=datetime.datetime.now(),
                                 location=location
                             )
-                            pn.flush()
+                            pn.commit()
                             print(subevent)
                         except Exception as e:
                             print(e)
@@ -164,7 +154,7 @@ class LocationParser:
 
     def parse(self):
 
-        with requests.get(DOMAIN_NAME + self.event_link) as r:
+        with requests.get(utils.DOMAIN_NAME + self.event_link) as r:
             soup = BeautifulSoup(r.text, "lxml")
 
         location = soup.findAll("span", {"itemprop": "location"})
